@@ -1,30 +1,40 @@
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
-            <div className="flex-none">
-                <button className="btn btn-square btn-ghost">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        className="inline-block h-5 w-5 stroke-current"
-                    >
-                        {" "}
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 6h16M4 12h16M4 18h16"
-                        ></path>{" "}
-                    </svg>
-                </button>
+            <div className="navbar-start">
+                <Link href="/" className="btn btn-ghost text-2xl">
+                    Chun-Yi Kuo
+                </Link>
             </div>
-            <div className="flex-1">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+            <div className="navbar-center">
+                <ul className="menu menu-horizontal px-1">
+                    <li>
+                        <Link href="/" className="btn btn-ghost text-xl">
+                            Intro
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/experiences"
+                            className="btn btn-ghost text-xl"
+                        >
+                            Experiences
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/projects"
+                            className="btn btn-ghost text-xl"
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                </ul>
             </div>
-            <div className="flex-none">
+            <div className="navbar-end">
                 <ThemeSwitcher />
             </div>
         </div>
