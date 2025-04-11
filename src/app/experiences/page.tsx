@@ -26,7 +26,7 @@ const page = () => {
                     <Icon path={mdiTag} size={0.8} /> Fullstack, CMS, SQL, Cloud
                     Migration, Scrum
                 </div>
-                <ul className="list-disc text-justify text-lg">
+                <ul className="list-disc md:text-justify text-lg">
                     <li>
                         Enhanced CMS performance by 10x through SQL indexing and
                         code refactoring, significantly improving report
@@ -72,7 +72,7 @@ const page = () => {
                     <Icon path={mdiTag} size={0.8} /> C++, Multithreading,
                     Read-time, Fault Tolerance, Cross Disciplinary Communication
                 </div>
-                <ul className="list-disc text-justify text-lg">
+                <ul className="list-disc md:ext-justify text-lg">
                     <li>
                         Designed an event-driven, multithreaded C++ Radar
                         Warning Receiver (RWR) capable of tracking hundreds of

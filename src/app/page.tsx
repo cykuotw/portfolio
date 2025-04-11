@@ -43,7 +43,7 @@ const page = () => {
                 </ul>
                 <div className="divider"></div>
                 <h1 className="text-3xl font-bold">About Me</h1>
-                <p className="text-justify text-lg lg:max-w-[800px]">
+                <p className="text-center md:text-justify text-lg lg:max-w-[800px]">
                     Hey there! It is Chun-Yi, a passionate Software Engineer.
                     <br /> I have 5+ years of experience designing scalable
                     microservices using C++, Go, and Python. Optimized

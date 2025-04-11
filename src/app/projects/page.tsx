@@ -20,7 +20,7 @@ const page = () => {
                 <div role="alert" className="alert alert-soft text-sm italic">
                     <Icon path={mdiTag} size={0.8} /> Go, React, Postgres, AWS
                 </div>
-                <ul className="list-disc text-justify text-lg">
+                <ul className="list-disc md:text-justify text-lg">
                     <li>
                         Fullstack web app using RESTful architecture, developed
                         with Go and React, and deployed on AWS.
@@ -50,7 +50,7 @@ const page = () => {
                     <Icon path={mdiTag} size={0.8} /> Python, Flask, MySQL,
                     Redis, Crawler, AWS
                 </div>
-                <ul className="list-disc text-justify text-lg">
+                <ul className="list-disc md:text-justify text-lg">
                     <li>
                         Automated system for collecting financial statements of
                         Taiwan-listed companies.
