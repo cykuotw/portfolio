@@ -1,5 +1,6 @@
 import Icon from "@mdi/react";
 import { mdiMapMarker, mdiBriefcase, mdiCalendar, mdiTag } from "@mdi/js";
+import Link from "next/link";
 
 const page = () => {
     return (
@@ -22,7 +23,7 @@ const page = () => {
                         ( 8 months )
                     </li>
                 </ul>
-                <div role="alert" className="alert alert-soft text-sm italic">
+                <div role="alert" className="alert alert-soft text-sm">
                     <Icon path={mdiTag} size={0.8} /> Fullstack, CMS, SQL, Cloud
                     Migration, Scrum
                 </div>
@@ -68,16 +69,21 @@ const page = () => {
                         ( 4 years 10 months )
                     </li>
                 </ul>
-                <div role="alert" className="alert alert-soft text-sm italic">
+                <div role="alert" className="alert alert-soft text-sm">
                     <Icon path={mdiTag} size={0.8} /> C++, Multithreading,
-                    Read-time, Fault Tolerance, Cross Disciplinary Communication
+                    Read-Time, Fault Tolerance, Cross Disciplinary Communication
                 </div>
                 <ul className="list-disc md:ext-justify text-lg">
                     <li>
-                        Designed an event-driven, multithreaded C++ Radar
-                        Warning Receiver (RWR) capable of tracking hundreds of
-                        radar targets in real-time with GB-level data
-                        throughput.
+                        Designed an event-driven, multithreaded C++{" "}
+                        <Link
+                            className="underline text-blue-500"
+                            href="/projects#RWR"
+                        >
+                            Radar Warning Receiver
+                        </Link>{" "}
+                        (RWR) capable of tracking hundreds of radar targets in
+                        real-time with GB-level data throughput.
                     </li>
                     <li>
                         Engineered the system for continuous, long-term
